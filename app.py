@@ -8,7 +8,7 @@ from telebot import types
 from difflib import SequenceMatcher
 import time
 from itertools import islice
-bot = telebot.TeleBot('6944064816:AAG6xP23JRAeUsYIarV0-p_XgLIBS7SjPO8')
+bot = telebot.TeleBot() #Ключ доступа
 bot.delete_webhook()
 limit,flagdict,bladict,mesdict,tdict, ldict, flagdict2, timed, hdict = dict(),dict(),dict(),dict(),dict(),dict(),dict(),dict(),dict()
 
@@ -151,4 +151,5 @@ while True:
     try:
         bot.polling(none_stop=True)
     except Exception as e:
+
         print(e)
